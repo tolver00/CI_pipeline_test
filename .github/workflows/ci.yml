@@ -26,5 +26,5 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          pytest -vv --maxfail=1 -rf
 
