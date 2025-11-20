@@ -24,7 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests
+      - name: Run Pytest
         run: |
           pytest -vv --maxfail=1 -rf
 
+      - name: Run Bandit test
+        run: |
+          bandit -r .
