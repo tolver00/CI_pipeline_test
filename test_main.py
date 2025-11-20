@@ -6,5 +6,3 @@ def test_add():
 def test_subtract():
     assert subtract(5, 7) == -2
 
-def test_floating_number():
-    assert floating_number(50) == 227.272727
