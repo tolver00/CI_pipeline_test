@@ -32,6 +32,6 @@ jobs:
         run: |
           flake8 . || true
 
-      - name: Run Bandit test
+      - name: Run Bandit
         run: |
           bandit -r .
